@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>JS Documentation</header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#Introduction">Introduction</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#What_you_should_already_know">What you should already know</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Variables">Variables</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Declaring_Variables">Declaring Variables</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Data_types">Data types</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Functions">Functions</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Reference">Reference</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>
+                    JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved. It is the third layer of the layer cake of standard web technologies, two of which (HTML and CSS) we have covered in much more detail in other parts of the Learning Area.
+                </p>
+                <ul>
+                    <li>HTML is the markup language that we use to structure and give meaning to our web content, for example defining paragraphs, headings, and data tables, or embedding images and videos in the page.</li>
+                    <li>CSS is a language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns.</li>
+                    <li>JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)</li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="What_you_should_already_know">
+            <header>What you should already know</header>
+            <article>
+                <p>You don't need any previous JavaScript knowledge, but you should have some familiarity with the following:</p>
+                <ul>
+                    <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+                <li>Basic to intermediate knowledge of HTML</li>
+                <li>Basic to intermediate knowledge of CSS
+                </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+            <article>
+                <h1 class="subtitle">What is a varible?</h1>
+                <p>
+                    A variable is a container for a value, like a number we might use in a sum, or a string that we might use as part of a sentence.
+                </p>
+                </article>
+                </section>
+
+                <section class="main-section" id="Declaring_Variables">
+                    <header>Declaring Variables</header>
+                    <article>
+                <p>
+                    JavaScript Variables can be declared in 4 ways:
+                </p>
+                <ul>
+                    <li>Automatically</li>
+                    <p>They are automatically declared when first used, for example:</p>
+                    <code>
+                            x = <span class="numbercolor">4</span>
+                            <br>
+                            y = <span class="numbercolor">8</span>
+                            <br>
+                            z = <span class="numbercolor">x + y</span>
+                        </code>
+                    
+                    <li>Using var</li>
+                    <p>For example:</p>
+                        <code>
+                        <span class="numbercolor_two">var</span class="numbercolor"> x = <span class="numbercolor">4</span>
+                            <br>
+                            <span class="numbercolor_two">var</span class="numbercolor"> y = <span class="numbercolor">8</span>
+                            <br>
+                            <span class="numbercolor_two">var</span class="numbercolor"> z = <span class="numbercolor">x + y</span>
+                        </code>
+                    <li>Usin let</li>
+                    <p>Example:</p>
+                        <code>
+                        <span class="numbercolor_two">let</span> x = <span class="numbercolor">4</span>
+                            <br>
+                            <span class="numbercolor_two">let</span> y = <span class="numbercolor">8</span>
+                            <br>
+                            <span class="numbercolor_two">let</span> z = <span class="numbercolor">x + y</span>
+                        </code>
+                    <li>Using const</li>
+                    <p>Example:</p>
+                        <code>
+                        <span class="numbercolor_two">const</span> x = <span class="numbercolor">4</span>
+                            <br>
+                            <span class="numbercolor_two">const</span> y = <span class="numbercolor">8</span>
+                            <br>
+                            <span class="numbercolor_two">const</span> z = <span class="numbercolor">x + y</span>
+                        </code>
+                </ul>
+                <h1>When to Use var, let, or const?</h1>
+                <ol>
+                    <li>Always declare variables</li>
+                    <li>Always use const if the value should not be changed</li>
+                    <li>Always use const if the type should not be changed (Arrays and Objects)</li>
+                    <li>Only use let if you can't use const</li>
+                    <li>Only use var if you MUST support old browsers.</li>
+                </ol>
+            </article>
+        </section>
+            <section class="main-section" id="Data_types">
+                <header>Data types</header>
+                <article>
+                    <p>JavaScript has 8 Datatypes:</p>
+                    <ol>
+                        <li>String</li>
+                        <li>Number</li>
+                        <li>Bigint</li>
+                        <li>Boolean</li>
+                        <li>Undefined</li>
+                        <li>Null</li>
+                        <li>Symbol</li>
+                        <li>Object</li>
+                    </ol>
+                    <h1>The Object Datatype</h1>
+                    <p>The object datatype can contain:</p>
+                    <ol>
+                        <li>An object</li>
+                        <li>An array</li>
+                        <li>A date</li>
+                    </ol>
+
+                    <p>Some Datatype examples:</p>
+                    <ul>
+                    <li>Numbers:</li>
+                    <code>
+                    <span class="numbercolor_two">let</span> length = <span class="numbercolor">25;</span>
+                            <br>
+                            <span class="numbercolor_two">let</span> weight = <span class="numbercolor">16;</span>
+                        </code>
+                            <br>
+                            <li>Strings:</li>
+                            <code>
+                            <span class="numbercolor_two">let</span> color = <span class="numbercolor">"Blue";</span>
+                            <br>
+                            <span class="numbercolor_two">let</span> lastName = <span class="numbercolor">"Johnson";</span>
+                        </code>
+                            <br>
+                            <li>Boolean:</li>
+                            <code>
+                            <span class="numbercolor_two">let</span> x = <span class="numbercolor">true;</span>
+                            <br>
+                            <span class="numbercolor_two">let</span> y = <span class="numbercolor">false;</span>
+                        </code>
+                            <br>
+                            <li>Object:</li>
+                            <code>
+                            <span class="numbercolor_two">const</span> person = <span class="numbercolor">{firstName:"John", lastName:"Doe"};</span>
+                        </code>
+                            <br>
+                            <li>Array object:</li>
+                            <code>
+                            <span class="numbercolor_two">const</span> cars = <span class="numbercolor">["Saab", "Volvo", "BMW"];</span>
+                        </code>
+                        </ul>
+                </article>
+            </section>
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <article>
+                <p>A JavaScript function is a block of code designed to perform a particular task.A JavaScript function is executed when "something" invokes it (calls it).</p>
+                    <h1>JavaScript Function Syntax</h1>
+                    <p>A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().</p>
+                    <p>Function names can contain letters, digits, underscores, and dollar signs (same rules as variables)</p>
+                    <p>The parentheses may include parameter names separated by commas:
+                        (parameter1, parameter2, ...)</p>
+                        <p>The code to be executed, by the function, is placed inside curly brackets: {}</p>
+                        <code>
+                            <span class="numbercolor_two">function</span> name(parameter1, parameter2, parameter3) {
+                                <span class="numbercolor">// code to be executed</span>
+                              }
+                            </code>
+                            <p>Function parameters are listed inside the parentheses () in the function definition.</p>
+                            <p>Function arguments are the values received by the function when it is invoked.</p>
+                            <p>Inside the function, the arguments (the parameters) behave as local variables.</p>
+              <h1>Function Invocation</h1>  
+              <p>The code inside the function will execute when "something" invokes (calls) the function:</p>    
+              <ul>
+                <li>When an event occurs (when a user clicks a button)</li>
+                <li>When it is invoked (called) from JavaScript code</li>
+                <li>Automatically (self invoked)</li>
+            </ul> 
+                <h1>Function Return</h1>
+                <p>When JavaScript reaches a 
+                    <span class="numbercolor_two">return</span> statement, the function will stop executing.</p>
+                <p>If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.</p>
+                <p>Functions often compute a return value. The return value is "returned" back to the "caller".</p>
+                <p>Example</p>
+                <code><span class="numbercolor">// Function is called, the return value will end up in x</span>
+                    <br>
+                    <span class="functioncolor1">let</span> x = myFunction(<span class="numbercolor_two">4</span>,<span class="numbercolor_two">3</span>);
+                    <br>
+                    <br>
+                    <span class="functioncolor1">function</span> myFunction(a, b) {
+                        <br>
+                        <span class="numbercolor"> // Function returns the product of a and b</span>
+                        <br>
+                        <span class="functioncolor1">return</span> a * b;
+                        }
+                </code>
+                <h1>Why Functions?</h1>
+                <ul>
+                    <li>With functions you can reuse code</li>
+                    <li>You can write code that can be used many times.</li>
+                    <li>You can use the same code with different arguments, to produce different results.</li>
+                </ul>
+                  <h1>The () Operator</h1>
+                  <p>The () operator invokes (calls) the function</p>
+                  <p>Example</p>
+                  <p>Convert Fahrenheit to Celsius:</p>
+                  <code>
+                    <span class="functioncolor1">function</span> toCelsius(fahrenheit) {
+                        <br>
+                        <span class="functioncolor1">return</span> (<span class="numbercolor_two">5</span>/<span class="numbercolor_two">9</span>) * (fahrenheit-<span class="numbercolor_two">32</span>);
+                        <br>
+                      }
+                      <br>
+                      <br>
+                      <span class="functioncolor1">let</span> value = toCelsius(<span class="numbercolor_two">77</span>);
+                  </code>
+                  <p>Accessing a function with incorrect parameters can return an incorrect answer</p>
+                  <code>
+                    <span class="functioncolor1">function</span> toCelsius(fahrenheit) {
+                        <br>
+                        <span class="functioncolor1">return</span> (<span class="numbercolor_two">5</span>/<span class="numbercolor_two">9</span>) * (fahrenheit-<span class="numbercolor_two">32</span>);
+                        <br>
+                      }
+                      <br>
+                      <br>
+                      <span class="functioncolor1">let</span> value = toCelsius();
+                  </code>
+                  <p>Accessing a function without () returns the function and not the function result:</p>
+                  <code>
+                    <span class="functioncolor1">function</span> toCelsius(fahrenheit) {
+                        <br>
+                        <span class="functioncolor1">return</span> (<span class="numbercolor_two">5</span>/<span class="numbercolor_two">9</span>) * (fahrenheit-<span class="numbercolor_two">32</span>);
+                        <br>
+                      }
+                      <br>
+                      <br>
+                      <span class="functioncolor1">let</span> value = toCelsius;
+                  </code>
+                  <h1>Note:</h1>
+                  <p>As you see from the examples above, <span class="numbercolor_two">toCelsius</span> refers to the function object, and <span class="numbercolor_two">toCelsius()</span> refers to the function result.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <p>All the documentation in this page is taken from:</p>
+            <ul>
+                <li>
+                    <a href="https://www.w3schools.com/" target="_blank">W3 Schools</a>
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN</a>
+                </li>
+            </ul>
+    </main>
+</body>
+</html>

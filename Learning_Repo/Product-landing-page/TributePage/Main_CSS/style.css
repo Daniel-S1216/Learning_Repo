@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@100&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 400px) {
+h1 {
+    font-size: 3.5rem;
+}
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+a {
+    color: steelblue;
+    text-decoration: none;
+    
+}
+
+a:hover {
+text-decoration: underline;
+color: rgba(24, 113, 214, 0.4);
+}
+
+a:visited {
+color: rgba(75, 24, 214, 0.4);
+}
+
+#main {
+    margin: 30px 8px;
+    padding: 15px;
+    border-radius: 5px;
+    background-image: linear-gradient(115deg, rgba(139, 122, 99, 0.7), rgba(223, 181, 126, 0.9)), url('https://cdn.pixabay.com/photo/2017/04/14/19/05/collage-2231082_960_720.jpg');
+    background-size: contain;
+    background-position: center;
+}
+
+@media (max-width: 400px) {
+    #main {
+        margin: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+#img-div {
+    padding: 10px;
+    margin: 0;
+}
+
+#img-caption {
+    margin: 15px 0 15px 0;
+}
+
+@media (max-width: 400px) {
+    #img-caption {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+}
+
+ul {
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.4;
+}
+
+li {
+    margin: 15px 0;
+}
