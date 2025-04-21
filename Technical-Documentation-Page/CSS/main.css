@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@100&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    color: steelblue;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+.functioncolor1 {
+    color: blueviolet;
+}
+
+.numbercolor {
+    color: rgb(58, 155, 2);
+}
+
+.numbercolor_two {
+    color: rgb(145, 72, 72);
+}
+
+#navbar {
+    position: fixed;
+    min-width: 250;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    border-right: solid steelblue;
+}
+
+#navbar a:hover {
+    font-weight: 600;
+    text-indent: 8px;
+    transition: text-indent 0.5s ease-in-out;
+}
+
+header {
+    margin: 10px;
+    font-size: 1.5em;
+    color: antiquewhite;
+    text-align: left;
+}
+
+#main-doc header {
+    text-align: left;
+    margin-left: 0;
+    position: relative;
+}
+
+#navbar ul {
+    height: 75%;
+    padding: 0;
+    overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+    border-top: 1px solid;
+    position: relative;
+    width: 100%;
+    list-style: none;
+}
+
+#navbar a {
+    display: block;
+    padding: 15px 40px;
+    color: antiquewhite;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 310px;
+    margin-bottom: 100px;
+}
+
+h1 {
+    font-style: italic;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+.main-section a {
+    color: aqua;
+}
+
+.main-section a:hover {
+    color: azure;
+}
+
+.main-section a:visited {
+    color: rgb(154, 119, 187);
+}
+
+span {
+    text-align: center;
+}
+
+code {
+    display: block;
+    background-color: antiquewhite;
+    padding: 25px;
+    margin: 15px;
+    font-size: inherit;
+}
+
+section article {
+    margin: 10px;
+    font-size: 0.9em;
+}
+section li {
+    line-height: 1.5;
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        flex-direction: row;
+    }
+
+    #navbar {
+        width: 300px;
+        height: 100%;
+        position: fixed;
+    }
+    code {
+        margin-left: -20px;
+        width: 100%;
+        padding: 15px;
+        padding-left: 10px;
+        padding-right: 45px;
+        min-width: 233px;
+      }
+}
